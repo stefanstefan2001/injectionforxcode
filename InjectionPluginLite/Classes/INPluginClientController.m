@@ -309,7 +309,7 @@ static NSString *kINUnlockCommand = @"INUnlockCommand", *kINSilent = @"INSilent"
         ([self.executablePath rangeOfString:@"/iPhone Simulator/"].location != NSNotFound ||
          [self.executablePath rangeOfString:@"/CoreSimulator/"].location != NSNotFound) )
         [[NSWorkspace sharedWorkspace] openURL:[NSURL fileURLWithPath:
-            [NSString stringWithFormat:@"%@/Contents/Developer/Applications/iOS Simulator.app",
+            [NSString stringWithFormat:@"%@/Contents/Developer/Applications/Simulator.app",
              [NSBundle mainBundle].bundlePath]]];
 }
 
